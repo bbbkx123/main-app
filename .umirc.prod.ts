@@ -28,10 +28,11 @@ export default defineConfig({
         },
         {
           name: 'jenkinsHTML',
-          entry: '//www.kkkiana.club/subapp/sub-jenkins-html/',
+          entry: '//jenkins.kkkiana.club/',
+          // entry: '//www.kkkiana.club/subapp/sub-jenkins-html/',
           // activeRule: getActiveRule('#/audio'),
           activeRule: '/sub-jenkins-html',
-          container: '#root',
+          container: '#jenkins-html',
           // props: {
           //   isQiankun: true,
           // },

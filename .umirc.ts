@@ -1,5 +1,4 @@
 import { defineConfig } from '@umijs/max';
-// import { loadingLoader } from '@/components/CustomLoading';
 
 export default defineConfig({
   define: {
@@ -53,6 +52,11 @@ export default defineConfig({
       redirect: '/home',
     },
     {
+      name: '首页',
+      path: '/home',
+      component: './Home',
+    },
+    {
       name: 'Ant Design Pro',
       path: '/sub-admin/*',
       microApp: 'adminApp',
@@ -74,20 +78,15 @@ export default defineConfig({
       component: './JenkinsHTML',
     },
     {
-      name: '首页',
-      path: '/home',
-      component: './Home',
-    },
-    {
       name: '权限演示',
       path: '/access',
       component: './Access',
     },
-    {
-      name: ' CRUD 示例',
-      path: '/table',
-      component: './Table',
-    },
+    // {
+    //   name: ' CRUD 示例',
+    //   path: '/table',
+    //   component: './Table',
+    // },
   ],
   npmClient: 'yarn',
 });
