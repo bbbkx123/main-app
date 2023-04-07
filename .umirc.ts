@@ -34,6 +34,16 @@ export default defineConfig({
             isQiankun: true,
           },
         },
+        {
+          name: 'jenkinsHTML',
+          entry: '/Users/kianakaslana/工程/study/blog_admin/jenkins_wrapper/',
+          // activeRule: getActiveRule('#/audio'),
+          activeRule: '/sub-jenkins-html',
+          container: '#root',
+          // props: {
+          //   isQiankun: true,
+          // },
+        },
       ],
     },
   },
@@ -56,6 +66,12 @@ export default defineConfig({
       path: '/sub-audio/*',
       microApp: 'audioApp',
       // component: './Audio',
+    },
+    {
+      name: 'jenkins',
+      path: '/sub-jenkins-html',
+      // microApp: 'audioApp',
+      component: './JenkinsHTML',
     },
     {
       name: '首页',
